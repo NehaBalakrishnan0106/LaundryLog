@@ -1,0 +1,65 @@
+body{
+
+    background-color: rgb(136, 112, 77);
+
+    transition: background-color 0.25s;
+
+    font-family: Arial, sans-serif;
+}
+
+#myH1{
+
+    font-size: 35px;
+
+    font-style: italic;
+
+    color: white;
+
+    margin-top: 40px;
+}
+
+form{
+
+    background-color: white;
+
+    padding: 30px;
+
+    width: 400px;
+
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 15px black;
+}
+
+button{
+
+    background-color: black;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+
+    background-color: darkgreen;
+
+    transform: scale(1.05);
+}
+
+#message{
+
+    color: white;
+
+    font-size: 20px;
+
+    margin-top: 20px;
+}

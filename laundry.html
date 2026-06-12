@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laundry Tracker</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='laundry.css') }}">
+
+</head>
+
+<body>
+
+<center>
+
+    <h1 id="myH1">
+        WELCOME TO THE LAUNDRY WEBSITE
+    </h1>
+
+    <form method="POST" action="/submit">
+
+        <label>Enter your name:</label>
+
+        <input type="text" name="customer">
+
+        <br><br>
+
+        <label>Select your service type:</label>
+
+        <label>
+            <input type="checkbox" name="service" value="Iron">
+            Iron
+        </label>
+
+        <label>
+            <input type="checkbox" name="service" value="Wash">
+            Wash
+        </label>
+
+        <label>
+            <input type="checkbox" name="service" value="Dry Clean">
+            Dry Clean
+        </label>
+
+        <br><br>
+
+        <label>Select your cloth type:</label>
+
+        <select name="cloth_type">
+
+            <option value="Tops">Tops</option>
+
+            <option value="Bottoms">Bottoms</option>
+
+            <option value="Innerware">Innerware</option>
+
+        </select>
+
+        <br><br>
+
+        <label>Enter quantity:</label>
+
+        <input type="number" name="quantity">
+
+        <br><br>
+
+        <button id="mySubmit" type="submit">
+            SUBMIT
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+</center>
+
+<script src="{{ url_for('static', filename='laundry.js') }}"></script>
+
+</body>
+</html>
