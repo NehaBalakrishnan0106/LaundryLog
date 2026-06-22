@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Laundry Tracker</title>
-
     <link rel="stylesheet"
     href="{{ url_for('static', filename='laundry.css') }}">
-
 </head>
-
 <body>
+    <header>
+        <a href="" title="blank">Home</a>
+        <a href="" title="blank">About Us</a>
+        <a href="" title="blank">Facilities</a>
+        <a href="" title="blank">Scan Here</a>
+        <a href="" title="blank">Contact Us</a>
+        <!--facilities er under - general r extra(iron)-->
+        <button>
+            Add to Basket
+        </button>
+    </header>
 
-<center>
-
+<div>
     <h1 id="myH1">
-        WELCOME TO THE LAUNDRY WEBSITE
+        WELCOME TO THE OFFIVCIAL WEBSITE OF LAUNDRY-MADE-EASY!
     </h1>
+    <p>
+        Where we deliver excellence a step ahead of others. Yes, you heard us right!
+    </p>
 
     <form method="POST" action="/submit">
 
@@ -80,6 +86,25 @@
 </center>
 
 <script src="{{ url_for('static', filename='laundry.js') }}"></script>
+<footer>
+    Phone Number:+91 1245789544
+    <br>
+    Email Id: laundrymadeeasy.nb@gmail.com
+    <br>
+    Address: Ukilpara, Baruipur, Kolkata-100, West Bengal, India
+    <br>
+    Address: Ichhegaon, Siliguri-15, West Bengal, India
+    <br>
+    Address: Asansol, Kolkata-20, West Bengal, India
+    <br>
+    Address: Murshidabad, West Bengal, India
+    <br>
+    <textarea placeholder="Reach out to us for any queries"></textarea>
 
+
+</footer>
 </body>
 </html>
+
+<!--https://webflow.com/made-in-webflow/website/neatwash-72fe36280ef8beecb8919703e844c1-->
+<!--https://webflow.com/made-in-webflow/website/tumbleontedder-->
