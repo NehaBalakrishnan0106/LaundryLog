@@ -1,0 +1,35 @@
+<section id="scan here">
+        <form method="POST" action="/submit">
+            Name *: <input type="text" name="customer" placeholder="Enter here" required>
+            <br><br>
+            Phone Number *: <input type="number" name="phone number" placeholder="Enter here" required>
+            <br><br>
+            Address *: <input type="text" name="address" placeholder="Enter here" required>
+            <br><br>
+            Service type *:
+            <input type="checkbox" name="service" value="Laundry" required>
+            Laundry
+        <input type="checkbox" name="service" value="Dry Cleaning">
+            Dry Cleaning
+        <input type="checkbox" name="service" value="Ironing">
+            Ironing
+        <br><br>
+        Cloth type *:
+        <select name="cloth_type" required>
+            <option value="Tops">Tops</option>
+            <option value="Bottoms">Bottoms</option>
+            <option value="Innerware">Innerware</option>
+            <option value="Bedding">Innerware</option>
+        </select>
+        <br><br>
+        Quantity *:
+        <input type="number" name="quantity">
+        <br><br>
+        <button id="mySubmit" type="submit" class="basket">
+            Add to Basket
+        </button>
+
+    </form>
+
+
+            </section>

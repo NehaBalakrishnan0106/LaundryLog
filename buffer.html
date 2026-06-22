@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    /* Basic styling */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      position: relative;
+      margin-right: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+    /* Dropdown styling */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      padding: 0;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    /* Show dropdown on hover */
+    nav ul li:hover > ul {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    /* Nested dropdown styling */
+    nav ul ul li {
+      width: 150px;
+    }
+    nav ul ul a {
+      padding: 10px;
+    }
+    /* Nested dropdowns (second level) */
+    nav ul ul ul {
+      top: 0;
+      left: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    nav ul ul li:hover > ul {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li>
+        <a href="#">Facilities</a>
+        <ul>
+          <li><a href="laundry.html">Laundry</a></li>
+          <li><a href="drywash.html">Dry Wash</a></li>
+          <li>
+            <a href="#">Ironing</a>
+            <ul> <!-- Second-level dropdown -->
+              <li><a href="ironing-staffs.html">Staffs</a></li>
+              <li><a href="ironing-equipment.html">Equipment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
