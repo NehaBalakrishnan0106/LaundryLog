@@ -1,9 +1,10 @@
 body{
-  background-image: url('background_home.jpg');
-  background-size: cover;   /* scales image to cover entire page */
+  /*background-image: url('background_home.jpg');
+  background-size: cover;    scales image to cover entire page 
   background-repeat: no-repeat;
-  background-position: center;
-} 
+  background-position: center;*/
+  background-color: rgb(129, 129, 66);
+}
 
 #myH1{
     font-size: 35px;
@@ -93,5 +94,38 @@ nav ul {
     transform: scale(1.05);
     
 }
+
+ .wrapper {
+  display: flex;               
+  justify-content: center;    /*centers horizontally */
+  align-items: center;        /*centers vertically */
+  gap: 20px;
+}
+
+.left, .center, .right {
+  display: flex;
+  flex-direction: column;     /* stack items vertically */
+  align-items: center;
+}
+
+.box {
+  background-color: white;
+  padding-left:10px;
+  padding-right:10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  line-height: 15px;
+}
+.center img {
+  max-width: 250px;           /* adjust image size */
+  border-radius: 10px;
+}
+.insta, .yt {
+  width:30px;
+  padding: 0;
+}
+
+
 
   
